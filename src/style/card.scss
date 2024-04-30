@@ -1,0 +1,85 @@
+.card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .card {
+    position: absolute;
+    height: 350px;
+    width: 250px;
+
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    perspective: 1000;
+  }
+
+  .flip-card {
+    transform: rotateY(180deg);
+  }
+
+
+  .card-front {
+    position: absolute;
+    background-color: $color-card-first;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $color-white;
+    border-radius: 15px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+
+    .card-title {
+      font-size: $font-title;
+      font-weight: $font-weight-bolder;
+      color: $color-card-second;
+    }
+
+    .card-description {
+      font-size: $font-medium;
+      font-weight: $font-weight-normal;
+      color: $color-white;
+    }
+
+  }
+
+  .card-back {
+    position: absolute;
+    background-color: $color-card-second;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $color-white;
+    border-radius: 15px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-evenly;
+
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+    .card-title {
+      font-size: $font-title;
+      font-weight: $font-weight-bolder;
+      color: $color-card-first;
+    }
+
+    .card-description {
+      font-size: $font-medium;
+      font-weight: $font-weight-normal;
+      color: $color-darkgrey;
+    }
+  }
+
+
+}
