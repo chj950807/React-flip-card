@@ -50,6 +50,12 @@
       color: $color-white;
     }
 
+    .card-name {
+      font-size: $font-large;
+      font-weight: $font-weight-normal;
+      color: $color-white;
+    }
+
   }
 
   .card-back {
@@ -79,6 +85,13 @@
       font-weight: $font-weight-normal;
       color: $color-darkgrey;
     }
+
+    .card-name {
+      font-size: $font-large;
+      font-weight: $font-weight-normal;
+      color: $color-darkgrey;
+    }
+
   }
 
 

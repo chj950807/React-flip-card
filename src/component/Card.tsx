@@ -15,18 +15,16 @@ export default function Card() {
                     <p className='card-description'>
                         이 카드를 클릭하면 뒤집어 집니다.
                     </p>
-                    <p className='card-description'>
-                        (주) 보토 코딩테스트용
-                    </p>
+                    <p className='card-name'>조혜준</p>
+                    <p className='card-description'>(주) 보토 코딩테스트용</p>
                 </div>
                 <div className='card-back'>
                     <h1 className='card-title'>뒷면</h1>
                     <p className='card-description'>
                         다시 클릭하면 앞면으로 돌아갑니다.
                     </p>
-                    <p className='card-description'>
-                        (주) 보토 코딩테스트용
-                    </p>
+                    <p className='card-name'>조혜준</p>
+                    <p className='card-description'>(주) 보토 코딩테스트용</p>
                 </div>
             </div>
         </div>
